@@ -2,7 +2,7 @@
 ﻿
 <html>
 <head>
-    <title>Welcome to the Website for Asian Adoptees</title>
+    <title>Welcome to the Website for Adoptees to Connect and Learn</title>
     <link rel="stylesheet" type="text/css"
           href="../CSS/styles.css">
 </head>
@@ -12,16 +12,17 @@
 <body>
 
     <div id="header">
-        <img src="familypicpng.png" alt="logo" width="90" height="90">
+        <img src="../Images/familypicpng.png" alt="logo" width="90" height="90">
         <h2>Welcome to The Website for Adoptees to Connect</h2>
     </div>
     <div style="clear:both;"></div>
     <div id="Main-nav">
+ <!--       <div class="navigation-menu-button"><img src="Images/menu.png" width="63" height="57" alt="" ></div>-->
         <ul>
 
             <li><a href="aboutpage.html" onmouseover="this.style.color = 'green'" onMouseout="this.style.color = 'black'">About This Site</a></li>
             <li><a href="blogpage.html" onmouseover="this.style.color = 'green'" onMouseout="this.style.color = 'black'">Blog for Adoptees</a></li>
-            <li><a href="upcomingevents.html" onmouseover="this.style.color = 'green'" onMouseout="this.style.color = 'black'">Upcoming Events</a></li>
+            <li><a href="upcomingevents.html" onmouseover="this.style.color = 'green'" onMouseout="this.style.color = 'black'">Events and Resources</a></li>
             <li><a href="contactpage.html" onmouseover="this.style.color = 'green'" onMouseout="this.style.color = 'black'">Contact Us</a></li>
 
 
@@ -128,8 +129,9 @@
     </article>
     <div id="Pictures">
         <br />
-
-        <img src="../Images/ascendinggrass.jpg" alt="logo" width="800" height="400"><br />
+        <div id="heartpic"><img src="../Images/heart.jpg" alt="logo" width="90" height="90"></div>
+        <div id="firstpic"><img src="../Images/ascendinggrass.jpg" alt="logo" width="800" height="400"><br /></div>
+        
         <img src="../Images/calmcity.jpg" alt="logo" width="800" height="400"><br />
         <img src="../Images/sharingameal.jpg" alt="logo" width="800" height="400"><br />
 
@@ -145,7 +147,26 @@
 
     <div style="clear:both;"></div>
 
-
+    <script>var navButton = document.querySelector(".navigation-menu-button img");
+        if (navButton.addEventListener) {
+            navButton.addEventListener("click", function () {
+                var nav = document.querySelector(".sitenavigation ul");
+                if (nav.style.display === "block") {
+                    nav.style.display = "";
+                } else {
+                    nav.style.display = "block";
+                }
+            }, false);
+        } else if (navButton.attachEvent) {
+            navButton.attachEvent("onclick", function () {
+                var nav = document.querySelector(".sitenavigation ul");
+                if (nav.style.display === "block") {
+                    nav.style.display = "";
+                } else {
+                    nav.style.display = "block";
+                }
+            });
+        }</script></script>
 </body>
 
 </html>

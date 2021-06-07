@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="reset.css">
     <title>Contact</title>
     <!-- -->
     <link rel="stylesheet" type="text/css" href="../CSS/styles.css">
@@ -23,25 +23,79 @@
 <body>
 
     <div id="header">
-        <img src="familypicpng.png" alt="logo" width="90" height="90">
+        <img src="../Images/familypicpng.png" alt="logo" width="90" height="90">
         <h2>Contact Us</h2>
+   <!--     <div id="Main-nav">
+            <ul>
+
+                <li><a href="index.html" onmouseover="this.style.color = 'green'" onMouseout="this.style.color = 'black'">Home</a></li>
+                <li><a href="blogpage.html" onmouseover="this.style.color = 'green'" onMouseout="this.style.color = 'black'">Blog</a></li>
+                <li><a href="upcomingevents.html" onmouseover="this.style.color = 'green'" onMouseout="this.style.color = 'black'">Events and Resources</a></li>
+                <li><a href="aboutpage.html" onmouseover="this.style.color = 'green'" onMouseout="this.style.color = 'black'">About Page</a></li>
+
+
+            </ul>
+        </div>-->
+        <form action="resultsofsubmission.html">
+
+            <fieldset class="contactinfo">
+                <legend>Contact Information</legend>
+                <label for="firstnamecontent">
+                    First Name
+                    <input type="text" name="firstname" id="firstnamecontent" placeholder="First Name" />
+                </label>
+                <label for="lastnamecontent">
+                    Last Name
+                    <input type="text" name="lastname" id="lastnamecontent" placeholder="Last Name" />
+                </label>
+                <label for="emailcontent">
+                    Email Address
+                    <input type="email" name="email" id="emailcontent" placeholder="address@example.com" />
+                </label>
+                <label for="phonecontent">
+                    Phone Number
+                    <input type="tel" name="phone" id="phonecontent" />
+                </label>
+
+            </fieldset>
+
+            <fieldset class="interestinfo">
+                <legend>Interest Information</legend>
+                Area of Interest
+                <label for="adoptioninterest">
+
+                    <input type="text" name="adoptioninterest" id="adoptioninterest" />
+                </label>
+            </fieldset>
+
+            <fieldset class="otherinfo">
+                <legend>Other Information</legend>
+                <textarea name="randominfo" id="randominfo" rows="5" cols="40"></textarea>
+            </fieldset>
+            <fieldset class="submitbtn">
+                <input type="submit" id="submitform" value="Submit Form">
+            </fieldset>
+        </form>
+
+
+
     </div>
     <div style="clear:both;"></div>
-    <div id="Main-nav">
+ <!--   <div id="Main-nav">
         <ul>
 
             <li><a href="index.html" onmouseover="this.style.color = 'green'" onMouseout="this.style.color = 'black'">Home</a></li>
             <li><a href="aboutpage.html" onmouseover="this.style.color = 'green'" onMouseout="this.style.color = 'black'">About This Site</a></li>
             <li><a href="blogpage.html" onmouseover="this.style.color = 'green'" onMouseout="this.style.color = 'black'">Blog</a></li>
-            <li><a href="upcomingevents.html" onmouseover="this.style.color = 'green'" onMouseout="this.style.color = 'black'">Upcoming Events</a></li>
+            <li><a href="upcomingevents.html" onmouseover="this.style.color = 'green'" onMouseout="this.style.color = 'black'">Events and Resources</a></li>
 
 
 
         </ul>
-    </div>
+    </div>-->
     <div style="clear:both;"></div>
 
-    <div style="margin-top: 4em">
+<!--    <div style="margin-top: 4em">
         <form action="send-email.nodejs" method="post">
             First name:<br>
             <input type="text" name="surname"
@@ -57,12 +111,12 @@
             <br><br>
             <input type="submit" onmouseover="this.style.color = 'blue'" onMouseout="this.style.color = 'black'" onclick="showAlert()" value="Send email message">
         </form>
-
+-->
 
     </div>
 
 
-    <div>
+<!--    <div>
         <form>
         <br />
             <input type="radio" name="level" value="I would like to learn more about connecting with fellow adoptees"> I would like to learn more about connecting with fellow adoptees<br><br>
@@ -70,7 +124,7 @@
             <input type="radio" name="level" value="It's something else"> It's something else
         </form>
 
-    </div>
+    </div>-->
     <div style="clear:both;"></div>
     <div id="footer">
     
