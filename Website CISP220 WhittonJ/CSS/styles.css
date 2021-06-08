@@ -110,8 +110,8 @@ div#heartpic:hover{
     transform: scale(1.2);
 }
 div#firstpic {
-    -webkit-transition-duration: 3s;
-    transition-duration: 3s;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
     -webkit-transition-timing-function: ease-in-out;
     transition-timing-function: ease-in-out;
 }
